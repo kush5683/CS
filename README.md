@@ -22,3 +22,5 @@
   - Software Engineering (D21)
 - 3133
   - Foundations of Computer Science (A21)
+- 4341
+  - Introduction to Artifical Intelligence(C22)
