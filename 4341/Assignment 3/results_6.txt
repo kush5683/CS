@@ -1,0 +1,80 @@
+board-6x6_1099.txt: (75, 7, 56, ['FORWARD', 'LEFT', 'FORWARD', 'BASH', 'RIGHT', 'FORWARD', 'RIGHT', 'START'], [node [2, 4] facing east f=24, node [2, 3] facing east f=25, node [2, 3] facing south f=23, node [1, 3] facing south f=25, node [0, 3] facing south f=25, node [0, 3] facing east f=21, node [0, 2] facing east f=20, Start [0, 2] facing north f=7], Board:
+2	1	S	7	9	2
+9	9	7	9	1	2
+2	8	8	4	G	1
+3	6	7	7	6	3
+6	9	2	9	1	6
+6	8	7	9	3	9
+)
+board-6x6_1319.txt: (91, 5, 9, ['FORWARD', 'RIGHT', 'FORWARD', 'FORWARD', 'RIGHT', 'START'], [node [1, 2] facing south f=8, node [0, 2] facing south f=15, node [0, 2] facing east f=14, node [0, 1] facing east f=15, node [0, 0] facing east f=17, Start [0, 0] facing north f=7], Board:
+S	4	2	8	8	2
+7	7	G	7	2	1
+9	2	7	3	5	4
+6	2	6	6	4	1
+6	8	1	1	8	5
+7	9	9	4	3	5
+)
+board-6x6_2082.txt: (94, 3, 4, ['FORWARD', 'FORWARD', 'LEFT', 'START'], [node [0, 0] facing west f=5, node [0, 1] facing west f=9, node [0, 2] facing west f=8, Start [0, 2] facing north f=7], Board:
+G	4	S	5	9	8
+9	3	8	7	9	2
+3	4	4	5	1	2
+4	6	7	2	5	8
+8	9	2	9	9	4
+5	3	7	1	6	2
+)
+board-6x6_2390.txt: (88, 7, 9, ['FORWARD', 'LEFT', 'FORWARD', 'BASH', 'RIGHT', 'FORWARD', 'RIGHT', 'START'], [node [2, 3] facing east f=11, node [2, 2] facing east f=12, node [2, 2] facing south f=11, node [1, 2] facing south f=16, node [0, 2] facing south f=16, node [0, 2] facing east f=15, node [0, 1] facing east f=20, Start [0, 1] facing north f=7], Board:
+6	S	1	9	3	3
+3	6	5	8	6	9
+7	5	1	G	4	3
+5	1	9	7	1	1
+1	5	7	7	2	6
+9	3	6	8	7	3
+)
+board-6x6_3056.txt: (77, 5, 33, ['FORWARD', 'FORWARD', 'FORWARD', 'FORWARD', 'LEFT', 'START'], [node [0, 1] facing west f=22, node [0, 2] facing west f=26, node [0, 3] facing west f=25, node [0, 4] facing west f=19, node [0, 5] facing west f=14, Start [0, 5] facing north f=7], Board:
+6	G	4	9	5	S
+9	6	6	9	2	6
+6	6	8	5	5	7
+3	2	6	2	6	3
+5	7	8	8	9	8
+5	1	2	9	9	8
+)
+board-6x6_3158.txt: (99, 1, 1, ['FORWARD', 'START'], [node [0, 0] facing north f=0, Start [1, 0] facing north f=7], Board:
+G	8	9	8	6	8
+S	6	8	1	8	5
+3	4	4	4	2	5
+5	4	6	9	4	9
+1	4	9	6	9	5
+2	5	1	1	5	9
+)
+board-6x6_3596.txt: (97, 3, 3, ['FORWARD', 'LEFT', 'LEFT', 'START'], [node [1, 0] facing south f=2, node [0, 0] facing south f=6, node [0, 0] facing west f=11, Start [0, 0] facing north f=7], Board:
+S	5	3	9	3	3
+G	9	9	9	2	8
+7	5	7	8	8	9
+1	7	4	6	6	9
+9	2	9	4	2	1
+2	3	6	8	2	6
+)
+board-6x6_3767.txt: (97, 3, 3, ['FORWARD', 'LEFT', 'LEFT', 'START'], [node [1, 0] facing south f=2, node [0, 0] facing south f=6, node [0, 0] facing west f=11, Start [0, 0] facing north f=7], Board:
+S	7	1	2	5	8
+G	9	2	3	8	6
+1	5	9	7	8	9
+7	6	7	6	7	3
+6	4	4	4	8	8
+1	5	6	5	2	5
+)
+board-6x6_3884.txt: (94, 4, 4, ['FORWARD', 'FORWARD', 'LEFT', 'LEFT', 'START'], [node [2, 0] facing south f=5, node [1, 0] facing south f=12, node [0, 0] facing south f=9, node [0, 0] facing west f=14, Start [0, 0] facing north f=7], Board:
+S	1	4	6	6	3
+3	1	4	7	1	2
+G	5	4	8	8	5
+8	8	1	4	2	7
+6	9	8	1	4	8
+9	1	6	5	9	9
+)
+board-6x6_97.txt: (86, 6, 14, ['FORWARD', 'BASH', 'LEFT', 'FORWARD', 'RIGHT', 'RIGHT', 'START'], [node [1, 3] facing east f=13, node [1, 2] facing east f=17, node [1, 1] facing east f=14, node [1, 1] facing south f=12, node [0, 1] facing south f=15, node [0, 1] facing east f=17, Start [0, 1] facing north f=7], Board:
+7	S	3	9	2	6
+3	3	8	G	8	4
+1	7	4	7	8	5
+2	9	5	7	4	8
+5	9	8	8	4	3
+6	7	6	5	8	3
+)
