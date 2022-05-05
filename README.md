@@ -23,4 +23,8 @@
 - 3133
   - Foundations of Computer Science (A21)
 - 4341
-  - Introduction to Artifical Intelligence(C22)
+  - Introduction to Artifical Intelligence (C22)
+- 4516
+  - Advanced Computer Networks (D22)
+- 4401
+  - Software Security Enginering (D22)
