@@ -1,0 +1,52 @@
+    1  shutdown -h now
+    2  exit
+    3  service networking restart
+    4  systemctl restart networking
+    5  systemctl start NetworkManager
+    8  cd /etc/network
+   16  ifconfig
+   18  cat interfaces 
+   20  cd `
+   21  cd ~
+   23  ping 10.61.17.33/27
+   24  ping
+   25  ping 10.61.17.33
+   30  service networking restart
+   33  ifdown ens3 && ifup ens3
+   34  apt install ifupdown
+   35  ifdown ens3 && ifup ens3
+   37* systemctl restart networkingclea
+   39  systemctl restart networking
+   41  systemctl restart networking
+   42  ifdown ens3 && ifup ens3
+   44  cd /etc/network
+   47  cd /etc/netplan
+   48  cat 00-installer-config.yaml 
+   49  cd /etc/network
+   53  cd /etc/netplan
+   55  nano 00-installer-config.yaml 
+   57  cat 00-installer-config.yaml 
+   58  netplan apply
+   59  ip route s
+   60  rount -n
+   61  route -n
+   62  ping 10.61.17.128
+   63  ping 10.61.17.32
+   64  ping 10.61.17.33
+   66  cat 00-installer-config.yaml 
+   67  curl http://10.61.17.98
+   68  curl http://10.61.17.66
+   69  curl http://10.61.17.98
+   70  ping 10.61.17.34
+   71  ping 10.61.17.65
+   72  ping 10.61.17.97
+   73  ping 10.61.17.66
+   74  ping 10.61.17.98
+   75  nano /etc/resolv.conf
+   76  ifconfig
+   77  cd ../networks
+   78  cd ../network
+   80  cd ~
+   82  history >history > transcript_host1.txt
+   83  rm transcript_host1.txt 
+   84  history > transcript_host1.txt

@@ -1,0 +1,7 @@
+network:
+    ethernets:
+        ens3:
+            dhcp4: true
+            addresses:
+                - 10.61.17.98/27
+    version: 2

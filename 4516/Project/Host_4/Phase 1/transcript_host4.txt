@@ -1,0 +1,38 @@
+    3  sudo apt update
+    4  sudp apt install apache2
+    5  sudo apt install apache2
+    6  sudo ufw app list
+    7  sudo ufw allow 'Apache'
+    8  sudo ufw status
+    9  sudo ufw enable
+   10  sudo ufw status
+   11  sudo systemctl status apache2
+   15  cd /var/www/html/
+   19  nano index.html
+   23  curl http://localhost
+   26  sudo apt install bind9
+   30  ifconfig > ifconfig.txt
+   31  route -n >route.txt
+   32  cat ifconfig.txt route.txt > output_host4.txt
+   42  history
+   55  cd /etc/netplan
+   57  nano 00-installer-config.yaml
+   58  touch /etc/bind/db.10
+   59  nano /etc/bind/db.10
+   63  cd /etc/bind
+   64  nano /etc/systemd/system/bind9.service
+   65  systemctl daemon-reload
+   66  nano /etc/bind/named.conf.options
+   67  nano named.conf.local
+   68  cp /etc/bind/db.local /etc/bind/db.team17.4516.cs.wpi.edu
+   69  nano /etc/resolv.conf
+   70  ufw disable
+   72  nano db.team17.4516.cs.wpi.edu
+   73  service bind9 restart
+   87  ping -I 10.61.17.98 10.61.17.34
+   88  ping -I 10.61.17.98 10.61.17.65
+   89  ping -I 10.61.17.98 10.61.17.33
+   90  ping -I 10.61.17.98 10.61.17.97
+   92  ping -I 10.61.17.98 10.61.17.66
+  127  curl http://10.61.17.66
+  133  history > transcript_host4.txt 

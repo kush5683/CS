@@ -1,0 +1,7 @@
+network:
+    ethernets:
+        ens3:
+            dhcp4: true
+            addresses:
+                - a lot
+    version: 2

@@ -1,0 +1,5 @@
+We chose to use Ryu because:
+1. The documentation was easy to read, which is not common.
+2. We found directions to edit packets with it.
+3. We wanted to use an Openflow controller in Python.
+4. We could not figure out how to install pox on the VMs.

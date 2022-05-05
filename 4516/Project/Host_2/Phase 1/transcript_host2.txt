@@ -1,0 +1,28 @@
+   34  git
+   35  clear
+   36  git clone https://github.com/openvswitch/ovs.git
+   37  apt install ovs
+   38  sudo apt install openvswitch
+   39  sudo apt install openvswitch-switch
+   40  sudo ovs-vswitchd
+   41  clear
+   42  logout
+   63  nano 00-installer-config.yaml
+   64  netplan apply
+   65  nano 00-installer-config.yaml
+   66  netplan apply
+   67  ip route s
+   68  route -n
+   69  cat 00-installer-config.yaml
+   69  nano /etc/sysctl.conf
+   70  ping 10.61.17.34
+   75  clear
+   76  ping 10.61.17.34
+   77  ping 10.61.17.33
+   79  curl 10.61.17.33
+   80  curl http://10.61.17.98
+   81  curl http://10.61.17.66
+   82  ping craigShue
+   88  ssh 10.61.17.33
+   89  history
+   92  history > transcript_host2.txt

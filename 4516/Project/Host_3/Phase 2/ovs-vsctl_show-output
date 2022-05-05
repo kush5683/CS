@@ -1,0 +1,10 @@
+    Bridge br0
+        Controller "tcp:10.61.17.4:6653"
+            is_connected: true
+        fail_mode: secure
+        Port ens3
+            Interface ens3
+        Port br0
+            Interface br0
+                type: internal
+    ovs_version: "2.13.15"

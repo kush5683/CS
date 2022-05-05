@@ -1,0 +1,36 @@
+Our code in phase3_controller.py is commented to help with understanding, but here we discuss our strategies a bit.
+
+We tracked which virtual IPs were allocated by the controller through a directory attribute of our controller class,
+with the keys being the string represenations of our virtual IPs, and the values being False if the IP was unallocated,
+and True if the IP was allocated.
+
+We also took an extra step and created an overridden list class called usageStack, which tracks IPs that are allocated,
+and maintains a stack structure based on how recently the IP was allocated. This is to handle the edge case where many
+DNS requests are made, but not web requests to the allocated IPs are ever made, effectively "filling" our dictionary with True.
+Originally, if this happened new DNS requests could not receive an IP until one of these web requests was made, leading to an easy
+DoS attack.
+
+The stack alleviates this by simply giving new DNS requests the allocated IP that was allocated the longest time ago (since
+our stack is set up to act as a 'timeline' of sorts), since it is assumed that original requester will not be using the IP to
+make a web request.
+
+
+We also filtered all traffic that was not between our machines for debugging purposes.
+
+To determine if a packet was a DNS reply, we checked if the packet was UDP and on port 53, then using an external library
+called dpkt we converted the packet representation and checked to see if the ANCount field was populated (indicating that
+the packet is a DNS reply). We had to use dpkt because Ryu does not currently have very well integrated DNS support as we
+initially thought it did.
+
+Then, we get a random unallocated virtual IP and edit the answer section bytes of the packet byte array to change the answer
+IP accordingly.
+
+Finally, we convert that byte array to a Ryu packet and set the checksum to 0 (indicating Ryu should automatically calculate it).
+We then call seriaize() on this packet which calculates the checksum, then send this edited packet's data to the switch.
+
+
+When a web request is made, we check if it is from Host 1 and to a virtual IP, and if it is, check if the virtual IP is
+valid. If it is, then the packet is allowed through and a FLOW MOD is pushed to allow the traffic, with a hard_timeout of the
+DNS TTL. If it isn't, then the packet is dropping and a short FLOW MOD is pushed to drop all traffic (hard_timeout of 1 second).
+
+If you have any questions, feel free to contact us.

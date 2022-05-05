@@ -1,0 +1,41 @@
+
+    3  sudo systemctl status apache2
+    4  ls
+    5  cd /var/www/html/
+    6  ls
+    7  cat index.html
+    8  rm index.html
+    9  nano index.html
+   10  clear
+   11  ls
+   12  cat index.html
+   17  hostname -I
+   18  curl http://localhost
+   19  logout
+   20  cd /etc/network
+   21  ls
+   22  nano interfaces
+   23  clear
+   24  cat interfaces
+   25  ifconfig
+   26  exit
+   27  cd etc/network/
+   28  cd /etc/network/
+   29  ls
+   30  cd /etc/netplan
+   31  nano 00-installer-config.yaml
+   32  netplan apply
+   40  cat 00-installer-config.yaml
+   41  ifconfig
+   42  ping 10.61.17.33
+   43  ping 10.61.17.65
+   44  ping 10.61.17.98
+   45  ping 10.61.17.34
+   46  ping 10.61.17.97
+   47  ifconfig
+   48  ping 10.61.17.33
+   49  cat /etc/network/interfaces
+   50  cat 00-installer-config.yaml
+   51  clear
+   52  cd ~
+   53  history > transcript_host3.txt

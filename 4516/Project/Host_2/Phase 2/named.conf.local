@@ -1,0 +1,21 @@
+//
+// Do any local configuration here
+//
+zone "team17.4516.cs.wpi.edu" {
+    type master;
+    file "/etc/bind/db.team17.4516.cs.wpi.edu"
+};
+zone "1.61.10.in-addr.arpa" {
+       type master;
+       notify no;
+       file "/etc/bind/db.10";
+};
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+
+// NOTE TO SELVES, to get any host to DNS properly you must edit its /etc/resolv.conf file to this:
+
+// nameserver 10.61.17.2
+// search www.team17.4516.cs.wpi.edu

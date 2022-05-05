@@ -1,0 +1,10 @@
+Our phase4_controller.py code is similar to our controller from phase 3, but with the additional SNAT functionality of phase 4.
+
+We achieved this by adding appropriate packet handling such that packets from Host 1's IP to a Host 3 virtual IP would be intercepted
+on Host 1 and FLOW_MODs would be made to rewrite the .1 IP address with a .48/28 address, and vice versa. These .48/28 IP addresses
+were tracked similarly to Host 3's virtual IPs, using a list variable named h1virtualIPs.
+
+These FLOW_MODs were made using the Ryu OpenFlow Action OFPActionSetNwSrc and OFPActionSetNwDst.
+
+No other changes were made since our phase 3 controller was written in such a way that the FLOW_MODs creating on Host 3's OVS would
+still function properly, even if the addresses Host 3 interacted with were virtual IPs in the .48/28 range instead of the .1 IP.

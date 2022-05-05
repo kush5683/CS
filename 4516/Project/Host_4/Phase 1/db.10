@@ -1,0 +1,11 @@
+$TTL    604800
+@   IN  SOA ns.team17.4516.cs.wpi.edu. root.team17.4516.cs.wpi.edu. (
+                            2      ; Serial
+                            604800 ; Refresh
+                            86400  ; Retry
+                            2419200 ; Expire
+                            604800 ) ; Negative Cache TTL
+;
+@   IN  NS  ns.team17.4516.cs.wpi.edu.
+10  IN  PTR www.team17.4516.cs.wpi.edu.
+98  IN  PTR ns.team17.4516.cs.wpi.edu.

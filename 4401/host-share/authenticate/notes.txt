@@ -1,0 +1,14 @@
+main():
+
+base64Decode() < 0xd #0xd == 13; 12 in b64 is MTI=
+
+if auth() then correct()
+
+auth():
+runs md5 hash on decoded input and compares it to "f87cd601aa7fedca99018a8be88eda34"
+if they are the same then return true
+
+
+
+
+

@@ -1,0 +1,13 @@
+See RTT vs Time graph for comparison of openflow vs. traditional network.
+We selected frame no. 10, 11, 14, 15 from test.pcap to preform an analysis on.
+OVS saw the SYN from host 1 at 16.514ms and elevated the packet to the controller.
+The controller had the packet for 1.2ms.
+OVS received the SYN packet out at 17.715ms.
+OVS elevated the SYN ACK at 18.293ms.
+The controller had the packet for .9ms.
+OVS got the packet out at 19.194ms.
+RTT: 2.68ms
+
+As shown above, the time taken by the controller in total was 2.1ms out of a total RTT of 2.68.
+This is why Open Flow is so much slower than a traditional network when there are no relevant flow table entries.
+:)

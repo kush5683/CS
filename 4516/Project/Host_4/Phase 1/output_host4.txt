@@ -1,0 +1,22 @@
+ens3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.61.17.98  netmask 255.255.255.224  broadcast 10.61.17.127
+        inet6 fe80::5054:ff:fe00:34d  prefixlen 64  scopeid 0x20<link>
+        ether 52:54:00:00:03:4d  txqueuelen 1000  (Ethernet)
+        RX packets 33656  bytes 32793562 (32.7 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 35059  bytes 2945360 (2.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 31070  bytes 2410419 (2.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 31070  bytes 2410419 (2.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+10.0.0.0        0.0.0.0         255.0.0.0       U     0      0        0 ens3
+10.61.17.96     0.0.0.0         255.255.255.224 U     0      0        0 ens3

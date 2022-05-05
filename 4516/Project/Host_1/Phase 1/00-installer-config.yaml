@@ -1,0 +1,10 @@
+network:
+    ethernets:
+        ens3:
+            dhcp4: true
+            addresses:
+                - 10.61.17.33/27
+        routes:
+            - to: 10.61.17.128/25
+              via: 10.61.17.34
+    version: 2
