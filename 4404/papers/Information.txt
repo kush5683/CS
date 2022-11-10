@@ -1,0 +1,10 @@
+The papers in this directory are named in a schema to match the
+assigned readings in CS 4404. The paper beginning with "00_" indicates
+the paper is due before the first day of class, while the two papers
+starting with "01_" are both due before the second class.
+
+This directory also contains many papers which are optional and simply
+present for students who are interested in learning more about a
+topic. Many are associated with a topic being discussed in class
+(e.g., "OPT_09_" papers are optional and are associated with the
+readings for the 10th class).

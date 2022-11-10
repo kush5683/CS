@@ -1,0 +1,2 @@
+The cryptography textbook chapter is available at the following link:
+http://cacr.uwaterloo.ca/hac/about/chap1.pdf
