@@ -28,3 +28,5 @@
   - Advanced Computer Networks (D22)
 - 4401
   - Software Security Enginering (D22)
+- 4404
+  - Tools and Techniques - Computer Network Security (B22)
