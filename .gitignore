@@ -9,4 +9,6 @@
 
 *.jar
 
+*.DS_Store
+
 \db-derby-10.14.2.0-bin
