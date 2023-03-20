@@ -30,3 +30,5 @@
   - Software Security Enginering (D22)
 - 4404
   - Tools and Techniques - Computer Network Security (B22)
+- Warden
+  - Senior Capstone Project (MQP)
